@@ -1,0 +1,692 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+:root {
+  font-family: 'Nunito Sans', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+
+  color-scheme: light dark;
+  color: rgb(255, 255, 255);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 10px;
+  min-height: 100vh;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #000000;
+    background-color: #f6fafad2;
+  }
+}
+
+/* NavBar */
+nav{
+  width: 100%;
+  position: sticky;
+  top: 0;
+  display: flex;
+  background-color: rgb(251, 244, 244);
+  border-radius: 4px;
+  height: 90px;
+}
+
+.nav-cartalogue {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.logo {
+  height: 3.3em;
+  padding: 1.5em;
+  border-radius: 40%;
+  margin-right: 1.4em;
+  margin-left: 10%;
+}
+
+.nav-logo{
+  display: flex;
+  width: 60%;
+  margin: 10px 5% 2px 2px;
+}
+
+.nav-logo h3{
+  font-family: Comforter,cursive;
+  color: rgb(7, 13, 69);
+  margin-top:28px;
+  font-size: 27px;
+}
+
+.nav-links{
+  display: flex;
+}
+
+.nav-links div{
+  font-family: Comforter,cursive;
+  width: 5em;
+  text-align: center;
+  margin-top:36px;
+  color: rgb(7, 13, 69);
+  font-size: 23px;
+  margin-right: .7em;
+  position: relative;
+  border: none;
+}
+.nav-links .active,.nav-links div:hover{
+  border: 3px solid #ff0095;
+}
+
+.nav-cart{
+  background-color: #ffffff;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  margin-top: 0;
+  width: 30px;
+  cursor: pointer;
+}
+
+nav span{
+  position: relative;
+  top: -0.7em;
+  left: 4.5px;
+  text-align: center;
+  border-radius: 30%;
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* Hero Section */
+.section-container{
+  padding: .5em;
+}
+
+
+.home-hero{
+  text-align: center;
+}
+
+.home-hero h2{
+  font-weight: bold;
+  margin-top: 2px;
+  font-size: 2em;
+}
+
+.hero-flex-divs{
+  display: flex;
+  box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.5);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin: 10px 10px 10px 10px;
+  --e-column-margin-right: 10px;
+  --e-column-margin-left: 10px;
+  padding: 20px 20px 20px 20px;
+}
+
+.hero-flex-divs div{
+  width: 50%;
+}
+
+.hero-text{
+  margin-right: 5% ;
+  line-height: 2em;
+}
+
+.hero-text p{
+  margin-top: 0;
+  font-size: 17px;
+}
+
+.hero-images{
+  height: 22em;
+  padding: 1em;
+  border: solid rgb(226, 217, 217) 1px;
+  background-color:transparent;
+  border-radius: 10px;
+}
+
+.hero-images img{
+  width: 95%;
+  height: 20em;
+  border-radius: 7px;
+}
+
+.about-text button, .hero-text button, .footer button{
+   width: 9em;
+   height: 2.5em;
+   background-color: rgb(239, 228, 214);
+   font-size: 16px;
+   text-align: center;
+   border: none;
+   border-radius: 6px;
+   font-weight: bold;
+   cursor: pointer;
+   margin-top: 2em;
+}
+
+.about-text button:hover,.hero-text button:hover , .footer button:hover{
+  font-size: 17px ;
+  box-shadow: 1px 3px 3px 1px #ff97d4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Comforter,cursive;
+  color: #ff0095;
+  font-weight: 500;
+}
+
+
+/* About section */
+.about-container{
+  display: grid;
+  margin: 0;
+  grid-template-columns: 40% 60%;
+}
+
+.about-heading, .products-heading{
+  margin-left: 18em;
+  width: fit-content;
+  font-size: 28px;
+  margin-top: 1.8em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid #ff0095;
+}
+
+.about-container div{
+  box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.5);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin: 10px 10px 10px 10px;
+  --e-column-margin-right: 10px;
+  --e-column-margin-left: 10px;
+  padding: 20px 20px 20px 20px;
+  padding-bottom: 5em;
+}
+
+.about-images{
+  margin-right: 2%;
+}
+
+.about-images img{
+  width: 90%;
+  height: 20em;
+  margin-right: 3em;
+  margin-top: 4em;
+  border-radius: 3px;
+}
+
+.about-text h3{
+  font-size: 22px;
+}
+
+.about-text button{
+  margin-left: 13em;
+}
+
+/* Products Section */
+.products-container{
+  display: flex;
+  box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.5);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin: 10px 10px 10px 10px;
+  --e-column-margin-right: 10px;
+  --e-column-margin-left: 10px;
+  padding: 20px 20px 20px 20px;
+}
+
+.products-container div{
+  margin-left: 3%;
+  box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.5);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin: 10px 10px 10px 10px;
+  --e-column-margin-right: 10px;
+  --e-column-margin-left: 10px;
+  padding: 20px 20px 20px 20px;
+}
+
+.elementor-div{
+  width: 30%;
+  position: relative;
+  cursor: pointer;
+  max-height: 350px;
+  border-radius: 5px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  transition: all 2s ease-in;
+}
+
+.elementor-div button{
+  font-family: Comforter,cursive;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #e5ff00;
+    background-color: #000000cb;
+    margin: 50% 35%;
+    border-width: 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.elementor-div:hover{
+  background-size: 130%;
+}
+
+.cakes-main{
+  background-image: url(https://bakeryco.co.za/wp-content/uploads/2022/10/IMG_5990-768x1103.jpg);
+}
+
+.biscuits-main{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6n4OX_WjbMiXd5Ws06OBqzqIGyNiNsZs76Q&usqp=CAU);
+}
+
+.cup-cakes-main{
+  background-image: url(https://bakeryco.co.za/wp-content/uploads/2021/06/IMG_4836-683x1024.jpg);
+}
+
+/* Reviews Component */
+.reviews{
+overflow: hidden;
+}
+
+.reviews-container div{
+    width: 25%;
+    min-height: 300px;
+    border: solid red 0.3px;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    padding-top: 5%;
+    margin-left: 13px;
+    border-radius: 8px;
+    background: #0d1216d4;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.reviews-container div:hover{
+   opacity: 0.85;
+   color: #ffffff;
+   border: none;
+}
+
+.reviews-container{
+  display: flex;
+  margin: 0;
+}
+
+.reviews-container h3{
+  color: #ffffff;
+}
+
+.review-heading{
+  margin-top: 1.3em;
+  position: relative;
+  color: #000000;
+  top: 21px;
+  left: 40%;
+}
+
+/* Footer */
+.footer{
+  width: 96%;
+  border-top: solid gray;
+  margin-top: 6em;
+  padding-bottom: 0;
+  margin-left: 1px;
+  margin-right: 2%;
+  padding: 1.5em;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  background: rgb(185, 185, 185);
+}
+
+.footer address{
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer span{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.footer .register{
+  padding-left: 2em;
+  text-align: center;
+}
+
+.footer div{
+  margin-right: 2em;
+}
+
+.footer h4{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 13px;
+  color: #000000;
+}
+
+.footer input{
+  width: 75%;
+  height: 2.5em;
+  margin-bottom:2em;
+  font-size: 18px;
+  padding-left: 6px;
+  border: none;
+}
+
+.footer input::placeholder{
+    opacity: 0.3;
+}
+
+.social-icons{
+  cursor: pointer;
+  font-size: 26px;
+  padding: 15px;
+}
+
+.tiktok{
+ color: black;
+}
+
+.facebook{
+  color: blue;
+}
+
+.instagram{
+ color: #ff0095;
+}
+
+.cake-store{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 3%;
+}
+
+.cup-cake-store, .cake-store div{
+  text-align: center;
+}
+
+.cup-cake-store button, .cake-store button{
+  /* width: 65px; */
+  font-size: 15px;
+  min-height: 35px;
+  border-radius: 6px;
+  background-color: goldenrod;
+  border: none;
+  opacity: 0.75;
+  color :white;
+  cursor: pointer;
+}
+
+
+
+.cup-cake-store{
+  display: grid;
+  grid-template-columns: 22% 22% 22% 22%;
+  grid-gap: 2%;
+}
+
+.cup-cake-store img{
+  height: 300px;
+  width: 90%;
+  border-radius: 3px;
+}
+
+.cakes-product h2{
+    color: black;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 40px;
+    margin-left: 45%;
+}
+
+.cakes-product button:hover{
+  font-size: 13px;
+}
+
+.cakes-product h4{
+  color: black;
+  font-size: 19px;
+}
+
+/*Display Cart */
+.display-container{
+  width: 70%;
+  float: right;
+  margin-top: 1em;
+  font-size: 16px;
+  margin-bottom: 5em;
+  margin-right: 5%;
+}
+
+.display-headings{
+  margin-bottom: 1em;
+  display: grid;
+  grid-template-columns: 55% 20% 20% 2%;
+  border-bottom: solid black 3px;
+}
+
+.display-item{
+  display: grid;
+  grid-template-columns: 5% 20% 15% 15% 18% 13%;
+  grid-gap: 3%;
+  text-align: center;
+}
+
+.display-item img{
+  width: 3.5em;
+  border-radius: 4px;
+  margin-bottom: 1em;
+}
+
+.total-price{
+  float: right;
+}
+
+.total-price{
+  text-align: end;
+  margin-right: 10%;
+  letter-spacing: 5px;
+}
+
+/* .total-price .quantity  */
+.icon-minus, .icon-plus{
+  margin-right: 15px;
+  margin-left: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.icon-delete{
+  background-color: gray;
+  color: red;
+  padding: 6px;
+  border-radius: 25px;
+  margin-top: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.total-price span{
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+.display-container p{
+ font-size: 18px;
+}
+
+.icon-plus{
+  color: rgb(0, 154, 0);
+}
+
+.icon-minus{
+  color: rgb(123, 80, 0);
+}
+
+.display-container{
+  min-height: 250px;
+}
+
+.no-items-text h2{
+ margin-top: 2em;
+ margin-bottom: 2em;
+}
+
+.no-items-text{
+  text-align: end;
+  margin-right: 20%;
+}
+
+
+
+.display-container button{
+width: 8em;
+margin-left: 85%;
+background-color: greenyellow;
+font-size: 17px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+padding: 12px;
+margin-top: 2em;
+}
+
+.display-total{
+   display: flex;
+   float: right;
+   border-top: 3px solid gray;
+   letter-spacing: 5px;
+}
+
+.display-total .total-text{
+  font-family: 'Times New Roman', Times, serif;
+   font-size: 20px;
+   font-weight: bold;
+   margin-right: 7em;
+}
+
+.display-total div{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+/* contact section */
+.contact-container{
+  margin: 3px;
+  cursor: move;
+}
+
+.contact-nav{
+  margin-top: 0;
+  margin-bottom: 2em;
+  height: 14em;
+  width: 100%;
+  text-align: center;
+  background-image: url(https://images.pexels.com/photos/1005405/pexels-photo-1005405.jpeg?auto=compress&cs=tinysrgb&w=400);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  padding-top: 2em;
+}
+
+.contact-nav h2{
+ color: #ffffff;
+  background-color: #00000047;
+  font-size: 4em;
+}
+
+.contact-form-wrapper{
+  display: grid;
+  grid-template-columns: 25% 75%;
+  margin: 1em;
+}
+
+.contact-form-wrapper div{
+  box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.5);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin: 10px 10px 10px 10px;
+  --e-column-margin-right: 10px;
+  --e-column-margin-left: 10px;
+  padding: 20px 20px 20px 20px;
+
+  min-height: 400px;
+  padding: 4em;
+  background-color: rgba(19, 19, 19, 0.922);
+  margin-left: 2em;
+}
+
+.contact-form-wrapper .input-el{
+  height: 35px;
+  width: 100%;
+  margin-top: 1em;
+  font-size: 18px;
+  border: none;
+  padding: 5px;
+}
+
+.contact-form-wrapper label{
+  color: #ffffff;
+  margin-top: 1px;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+textarea{
+  margin-top: 3em;
+  height: 80px;
+  width: 100%;
+  border: none;
+  font-size: 19px;
+}
+
+.checkbox{
+  margin-top: 2em;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.contact-form-wrapper button{
+  width: 5em;
+  margin-top: 2.2em;
+  height: 2em;
+  background-color: #e5ff00;
+  border-radius: var(--e-column-margin-left) 22% var(--e-column-margin-left) 0%;
+  font-size: 17px;
+  font-style: italic;
+  cursor: pointer;
+  color: red;
+}
+
+.contact-form-contacts h3{
+  color: #ffffff;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.contact-form-contacts li{
+  margin-top: 2.5em;
+  text-decoration: none;
+  color: #ffffff;
+}
